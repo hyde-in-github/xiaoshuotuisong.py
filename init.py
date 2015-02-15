@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*-
 # <nbformat>3.0</nbformat>
-
+import urllib2
+from cn2dig import cn2dig
+from BeautifulSoup import BeautifulSoup
+import re
 path = '/home/hyde/xiaoshuo/last.txt'
 
 html = urllib2.urlopen('http://tieba.baidu.com/f?kw=%CD%EA%C3%C0%CA%C0%BD%E7%D0%A1%CB%B5&fr=ala0')
@@ -27,5 +30,5 @@ for i in range(3):
         None
         
 fp = open(path,'w')
-    fp.write(str(max(content)))
-    fp.close()
+fp.write(str(max(content)))
+fp.close()
