@@ -88,7 +88,7 @@ if max(content) > last:
         for j in pattern6.findall(str(soup1.findAll('cc')[0].findAll('div')[0])):
             string += '\xe3\x80\x80\xe3\x80\x80' + j.replace('\xe3\x80\x80', '').replace('>', '').replace('<', '') + '\n'
             content[No]['text'] = string
-    send(content)xiO
+    send(content)
 
 # <codecell>
 
